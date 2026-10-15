@@ -75,7 +75,7 @@ function PlatformLogo({ platform }: { platform: Platform }) {
 
 function CTAButton({
   children,
-  href = "#contact",
+  href = "#lead-form",
   phone = false,
   nowrap = false,
 }: {
@@ -851,7 +851,7 @@ export default function Home() {
           </div>
 
           <a
-            href="#contact"
+            href="#lead-form"
             className="button-yellow-cta final-cta-button-nowrap"
             style={{
               whiteSpace: "nowrap",
@@ -910,7 +910,7 @@ export default function Home() {
             </div>
           </div>
 
-          <form className="contact-form" action={formAction}>
+          <form id="lead-form" className="contact-form" action={formAction}>
             <div className="form-header">
               <span className="form-badge">Free Growth Audit</span>
               <h3>Book Your Consultation</h3>
